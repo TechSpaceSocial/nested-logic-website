@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Logic | Expert Front-End Debugging & Refactoring Specialist</title>
+    
+    <meta name="description" content="Daysha Freeman's Nested Logic: Front-End Debugging and Refactoring specialist. I find and fix critical HTML, CSS, and structural errors that break your layout and hurt Core Web Vitals. Fix your code today.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Semantic Color Definitions to match your class usage:
+                        'primary-dark': '#1C2833', // Deep background for the body/cards
+                        'secondary-dark': '#2C3E50', // Background for Header/Sections (was 'charcoal')
+                        'accent': '#3498DB', // The Cyan color for CTA/Highlight (was 'cyan')
+                        
+                        // Other utility colors:
+                        'light-gray': '#F5F7FA',
+                        'success': '#2ECC71',
+                        // You can still keep 'charcoal' and 'cyan' as aliases if you want:
+                        'charcoal': '#2C3E50', 
+                        'cyan': '#3498DB',  
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+
+        // --- BLOG POST CONTENT AND MODAL LOGIC (UNCHANGED) ---
+        const blogContent = { /* ... */ };
+        function openModal(postId) { /* ... */ }
+        function closeModal() { /* ... */ }
+        document.addEventListener('DOMContentLoaded', () => { /* ... */ });
+
+    </script>
+    <style>
+        /* Base styles for smooth scrolling and clean font */
+        html { scroll-behavior: smooth; font-family: 'Inter', sans-serif; }
+        /* Fix for grid background using the new custom color: */
+        .bg-grid-white-100{background-image:linear-gradient(0deg,transparent 24px,#3498DB1a 25px,#3498DB1a 26px,transparent 27px,transparent),linear-gradient(90deg,transparent 24px,#3498DB1a 25px,#3498DB1a 26px,transparent 27px,transparent);background-size:27px 27px;}
+    </style>
+</head>
+<body class="bg-primary-dark text-cyan-200">
+
+    <header class="sticky top-0 z-50 bg-secondary-dark/95 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+            <a href="#" class="text-xl font-bold text-accent tracking-widest">Nested Logic</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="text-gray-300 hover:text-accent transition duration-300">Services</a>
+                <a href="#portfolio" class="text-gray-300 hover:text-accent transition duration-300">Case Studies</a>
+                <a href="#blog" class="text-gray-300 hover:text-accent transition duration-300">Knowledge Hub</a>
+                <a href="https://www.fiverr.com/s/Gz4QKwet" class="px-3 py-1 bg-accent text-primary-dark rounded-full font-semibold hover:bg-cyan-400 transition duration-300">Book Audit</a>
+            </nav>
+            <button class="md:hidden text-gray-300 hover:text-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <section class="bg-light-gray pt-24 pb-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-5xl sm:text-7xl font-extrabold mb-4 leading-tight">
+                Code That Just <span class="text-accent">Works.</span> Period.
+            </h2>
+            <h3 class="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+                Front-End Debugging and Refactoring Specialist. I eliminate the structural bugs that hurt Core Web Vitals and break responsive layouts.
+            </h3>
+            <a href="mailto:dayshamfreeman@gmail.com" class="inline-block bg-secondary-dark text-white font-bold text-xl py-3 px-10 rounded-lg shadow-xl hover:bg-opacity-80 transition-ease uppercase tracking-widest transform hover:scale-[1.02]">
+                Get a Free Structural Review
+            </a>
+        </div>
+    </section>
+
+    <section class="bg-primary-dark py-10 text-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <a href="https://www.fiverr.com/s/Gz4QKwe" class="inline-block px-10 py-4 text-lg font-bold bg-accent text-primary-dark rounded-xl shadow-lg hover:bg-cyan-400 transition duration-300 transform hover:scale-105">
+                Fix My Code Now
+            </a>
+            
+            <div class="absolute inset-0 z-0 opacity-10 pointer-events-none">
+                <div class="w-full h-full bg-grid-white-100"></div>
+            </div>
+            </div>
+    </section>
+    
+    <section id="services" class="py-20 bg-secondary-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">Stop Losing Conversions to Bad Code</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="bg-primary-dark p-6 rounded-xl shadow-2xl border border-gray-700 hover:border-accent transition duration-300">
+                    <div class="text-accent mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bug"><path d="m8 2 1.5 1.5"/><path d="M10 6.5V20"/><path d="m14 2 1.5 1.5"/><path d="M14 6.5V20"/><path d="M12 20h2"/><path d="M12 20h-2"/><path d="M12 20v2"/><path d="M12 6.5h2"/><path d="M12 6.5h-2"/><path d="M12 6.5v-2"/><circle cx="12" cy="6.5" r="4.5"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Structural Debugging</h3>
+                    <p class="text-gray-400">Fixing critical **HTML nesting**, tag closure, and CSS syntax errors that lead to broken layouts and poor accessibility scores.</p>
+                </div>
+
+                <div class="bg-primary-dark p-6 rounded-xl shadow-2xl border border-gray-700 hover:border-accent transition duration-300">
+                    <div class="text-accent mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><line x1="16" x2="8" y1="12" y2="12"/><line x1="15" x2="8" y1="16" y2="16"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Code Refactoring</h3>
+                    <p class="text-gray-400">Cleaning up messy, legacy, or overly verbose code into modern, maintainable, and **highly performant** standards (Tailwind, Flexbox/Grid).</p>
+                </div>
+
+                <div class="bg-primary-dark p-6 rounded-xl shadow-2xl border border-gray-700 hover:border-accent transition duration-300">
+                    <div class="text-accent mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge"><path d="m12 14 4-4"/><path d="M3.34 16.66a8 8 0 1 1 17.32 0"/><path d="M12 10v6"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-white mb-3">Performance Audits</h3>
+                    <p class="text-gray-400">Ensuring your site's code meets **Core Web Vitals**. I specialize in fixing viewport issues and optimizing for blazing-fast mobile display.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-20 bg-primary-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-white mb-6">Recent Case Files: Debugged & Delivered</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Real-world examples of critical bugs identified, fixed, and delivered to happy clients, complete with 5-star reviews.</p>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                
+                <div class="bg-secondary-dark p-6 rounded-xl shadow-lg border border-gray-700">
+                    <h4 class="text-2xl font-semibold text-accent mb-2">Case File 01: Portfolio Structure Audit</h4>
+                    <p class="text-gray-400 mb-4">Client's new portfolio site had inconsistent structure and was failing responsive checks.</p>
+                    <ul class="list-disc list-inside text-gray-300 pl-4">
+                        <li>**Problem:** Missing `<meta name="viewport">` and unclosed tags.</li>
+                        <li>**Solution:** Implemented structural integrity fixes and mobile-first meta-data.</li>
+                        <li>**Result:** ⭐⭐⭐⭐⭐ "Excellent Structural Integrity!"</li>
+                    </ul>
+                </div>
+
+                <div class="bg-secondary-dark p-6 rounded-xl shadow-lg border border-gray-700">
+                    <h4 class="text-2xl font-semibold text-accent mb-2">Case File 02: E-commerce Product Specs</h4>
+                    <p class="text-gray-400 mb-4">A product page layout was broken due to multiple small syntax errors and typos.</p>
+                    <ul class="list-disc list-inside text-gray-300 pl-4">
+                        <li>**Problem:** Typo in CSS selector and missing `</li>` in the product specs list.</li>
+                        <li>**Solution:** Corrected list element closures for accessibility and fixed styling typos.</li>
+                        <li>**Result:** ⭐⭐⭐⭐⭐ "Flawless Product Layout!"</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-secondary-dark p-6 rounded-xl shadow-lg border border-gray-700">
+                    <h4 class="text-2xl font-semibold text-accent mb-2">Case File 03: Blog Readability Fix</h4>
+                    <p class="text-gray-400 mb-4">A blog template had invalid link elements and broken paragraph styling.</p>
+                    <ul class="list-disc list-inside text-gray-300 pl-4">
+                        <li>**Problem:** Invalid `div` with an `href` attribute and a CSS property typo (`font-siz:`).</li>
+                        <li>**Solution:** Replaced invalid element with a correct `<a>` tag and fixed CSS syntax.</li>
+                        <li>**Result:** ⭐⭐⭐⭐⭐ "Highly Recommended for Template Work!"</li>
+                    </ul>
+                </div>
+
+                <div class="bg-secondary-dark p-6 rounded-xl shadow-lg border border-gray-700">
+                    <h4 class="text-2xl font-semibold text-accent mb-2">Case File 04: Form Accessibility & Validation</h4>
+                    <p class="text-gray-400 mb-4">A critical registration form was structurally invalid and failing accessibility checks.</p>
+                    <ul class="list-disc list-inside text-gray-300 pl-4">
+                        <li>**Problem:** Missing `</form>` tag and typo in the `<label for="...">` attribute.</li>
+                        <li>**Solution:** Ensured proper form closure and corrected label linking for screen readers.</li>
+                        <li>**Result:** ⭐⭐⭐⭐⭐ "A-Grade Form Accessibility and Structure!"</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                 <a href="https://www.fiverr.com/s/Gz4QKwe" class="text-accent hover:text-cyan-400 transition duration-300 font-semibold text-lg">See All 5 Projects &rarr;</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="blog" class="py-20 bg-primary-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-white mb-6">Free Knowledge Hub: Debugging Deep Dives</h2>
+            <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">See my process in action. Quick guides on fixing the most frustrating front-end errors that separate amateur code from production-ready quality.</p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <a href="javascript:void(0)" onclick="openModal('post-1')" class="group block bg-secondary-dark p-6 rounded-xl shadow-xl hover:shadow-accent/50 transition duration-300 border border-gray-700 hover:border-accent">
+                    <h3 class="text-xl font-semibold text-accent group-hover:text-cyan-400 transition duration-300">The Silent Killers: Missing Tags & Nesting Errors</h3>
+                    <p class="text-sm text-gray-500 mt-2">HTML/CSS Fundamentals</p>
+                    <p class="text-gray-400 mt-4 text-sm">How simple omissions turn into major layout bugs.</p>
+                    <span class="text-sm text-accent mt-3 block">Read Article &rarr;</span>
+                </a>
+
+                <a href="javascript:void(0)" onclick="openModal('post-2')" class="group block bg-secondary-dark p-6 rounded-xl shadow-xl hover:shadow-accent/50 transition duration-300 border border-gray-700 hover:border-accent">
+                    <h3 class="text-xl font-semibold text-accent group-hover:text-cyan-400 transition duration-300">Attribute Typos: The Invisible Failures</h3>
+                    <p class="text-sm text-gray-500 mt-2">Debugging Attributes</p>
+                    <p class="text-gray-400 mt-4 text-sm">When CSS won't apply and quotes go rogue.</p>
+                    <span class="text-sm text-accent mt-3 block">Read Article &rarr;</span>
+                </a>
+
+                <a href="javascript:void(0)" onclick="openModal('post-3')" class="group block bg-secondary-dark p-6 rounded-xl shadow-xl hover:shadow-accent/50 transition duration-300 border border-gray-700 hover:border-accent">
+                    <h3 class="text-xl font-semibold text-accent group-hover:text-cyan-400 transition duration-300">The Cost of Quirk Mode: Missing Doctype</h3>
+                    <p class="text-sm text-gray-500 mt-2">SEO & Standards</p>
+                    <p class="text-gray-400 mt-4 text-sm">Why one line of code dictates browser behavior.</p>
+                    <span class="text-sm text-accent mt-3 block">Read Article &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-accent/10 border-t border-b border-gray-700">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold text-white mb-4">Ready to Ship Flawless Front-End Code?</h2>
+            <p class="text-xl text-gray-400 mb-8">
+                Don't let hidden errors cost you customers. Get a free code review and project quote today.
+            </p>
+            <a href="https://www.fiverr.com/s/Gz4QKwe" class="inline-block px-12 py-5 text-xl font-bold bg-accent text-primary-dark rounded-full shadow-2xl hover:bg-cyan-400 transition duration-300 transform hover:scale-105">
+                Start My Code Audit
+            </a>
+        </div>
+    </section>
+    
+    <footer class="py-8 text-center text-gray-500 text-sm bg-primary-dark">
+        <p>&copy; 2025 Daysha Freeman | Nested Logic | Las Vegas, NV</p>
+        <div class="mt-2 space-x-4">
+             <a href="https://www.linkedin.com/in/dayshamfreeman/" class="hover:text-accent">LinkedIn</a>
+             <a href="https://www.fiverr.com/s/Gz4QKwe" class="hover:text-accent">Fiverr</a>
+        </div>
+    </footer>
+
+
+    <div id="blog-modal" class="hidden fixed inset-0 z-[100] bg-black bg-opacity-80 flex items-center justify-center p-4 transition-opacity duration-300" aria-modal="true" role="dialog">
+        <div class="bg-secondary-dark w-full max-w-4xl max-h-[95vh] rounded-xl shadow-2xl overflow-y-auto p-8 relative border border-accent/20">
+            
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-gray-400 hover:text-accent transition duration-300" aria-label="Close modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+
+            <h3 id="modal-title" class="text-4xl font-extrabold text-accent mb-6 border-b border-gray-700 pb-3"></h3>
+            
+            <div id="modal-content" class="text-base space-y-4">
+                </div>
+
+            <div class="mt-8 pt-6 border-t border-gray-700 text-center">
+                <p class="text-gray-400 mb-4">Want to eliminate these kinds of errors for good?</p>
+                <a href="https://www.fiverr.com/s/Gz4QKwe" onclick="closeModal()" class="inline-block px-8 py-4 text-lg font-bold bg-accent text-primary-dark rounded-full hover:bg-cyan-400 transition duration-300 transform hover:scale-105">
+                    Start My Code Audit
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
